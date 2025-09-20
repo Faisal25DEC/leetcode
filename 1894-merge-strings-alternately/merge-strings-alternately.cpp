@@ -7,7 +7,6 @@ public:
                 string s1(1,word1[i]);
                 string s2(1,word2[i]);
                 string word = s1+s2;
-                cout<<word<<" "<<to_string(word1[i])<<endl;
                 res+= word;
             }
             else if(i<word2.size())res+=string(1,word2[i]);
