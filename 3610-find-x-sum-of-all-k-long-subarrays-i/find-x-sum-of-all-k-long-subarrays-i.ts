@@ -6,12 +6,10 @@ function getMapSum(obj:Record<string,number>,x:number){
         if(b[0]-a[0]>0) return b[0]-a[0];
         return b[1]-a[1];
     })
-    console.log(arr);
     for(let i = 0;i<Math.min(x,arr.length);i++){
 
         sum+=(+arr[i][0]*+arr[i][1]);
     }
-    console.log('\n\n',sum)
     return sum;
 }
 
