@@ -10,14 +10,12 @@ function longestPalindrome(s: string): number {
     let isOdd = false;
     let maxOdd = 0;
     freqMap.forEach((value,key)=>{
-        console.log(value)
         if(value%2 === 1){
             isOdd = true;
             count+=value-1;
         }
         else{
             count += value;
-            console.log(count)
         }
         
 
