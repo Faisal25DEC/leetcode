@@ -17,7 +17,6 @@
     let res = false
 
     if(root1 && root2){
-         console.log(root1,root2)
          res =  (root1.val === root2.val) && isMirror(root1.left, root2.right) && isMirror(root1.right, root2.left);
          return res;
     }
