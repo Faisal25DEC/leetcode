@@ -13,15 +13,10 @@
  */
 
  function isMirror(root1:TreeNode | null , root2:TreeNode | null):boolean{
-    
 
-    if(root1 && root2){
-         return (root1.val === root2.val) && isMirror(root1.left, root2.right) && isMirror(root1.right, root2.left);
-      
-    }
-    return root1 === root2
-
+    if(root1 && root2) return (root1.val === root2.val) && isMirror(root1.left, root2.right) && isMirror(root1.right, root2.left);
     
+    return root1 === root2   
  }
 
 function isSymmetric(root: TreeNode | null): boolean {
